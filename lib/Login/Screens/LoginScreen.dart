@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:winners_book_hackathon/CommonWidgets/CustomTextField.dart';
+import 'package:winners_book_hackathon/HomePage/Screens/HomePage.dart';
 import 'package:winners_book_hackathon/Registeration/Screens/RegisterationScreen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -62,7 +63,10 @@ class LoginScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // Add your login logic here
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (context) => MyHomePage()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
@@ -83,7 +87,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(
+                    Navigator.of(context).push(
                       MaterialPageRoute(
                           builder: (context) => RegisterationScreen()),
                     );
