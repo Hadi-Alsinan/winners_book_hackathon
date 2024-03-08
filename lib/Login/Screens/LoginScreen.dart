@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:winners_book_hackathon/CommonWidgets/CustomTextField.dart';
-import 'package:winners_book_hackathon/HomePage/Screens/HomePage.dart';
+import 'package:winners_book_hackathon/HomePage/Screens/Entry.dart';
 import 'package:winners_book_hackathon/Registeration/Screens/RegisterationScreen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -65,7 +65,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                          builder: (context) => MyHomePage()),
+                          builder: (context) => EntryPage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
