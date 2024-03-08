@@ -24,7 +24,7 @@ class CustomTextField extends StatelessWidget {
           floatingLabelBehavior: FloatingLabelBehavior.always,
           hintStyle: GoogleFonts.readexPro(
             textStyle: TextStyle(
-              color: Colors.green,
+              color: Colors.grey[400],
               fontSize: 16.0,
               fontWeight: FontWeight.w500,
             ),
