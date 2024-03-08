@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       body: Directionality(
         textDirection: TextDirection.rtl,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment:
                 CrossAxisAlignment.start,
