@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:winners_book_hackathon/HomePage/Screens/LeaderBoard.dart';
 
 import 'HomePage.dart';
 import 'ProfileScreen.dart';
@@ -15,7 +16,7 @@ class _EntryPageState extends State<EntryPage> {
   static  List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Text('Index 1: Cart'),
-    Text('Index 2: Profile'),
+    LeaderBoardScreen(),
     ProfileScreen(),
   ];
 
