@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'HomePage.dart';
+import 'ProfileScreen.dart';
 
 class EntryPage extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class _EntryPageState extends State<EntryPage> {
     HomePage(),
     Text('Index 1: Cart'),
     Text('Index 2: Profile'),
-    Text('Index 3: Settings'),
+    ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {
