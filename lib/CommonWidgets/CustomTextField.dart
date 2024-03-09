@@ -6,12 +6,14 @@ class CustomTextField extends StatelessWidget {
   final IconData? icon;
   final Function? iconPressed;
   final TextInputType? textInputType; // New parameter for input type
+  final bool isDisabled; // New parameter for disabling the text field
 
   CustomTextField({
     required this.hintText,
     this.icon,
     this.iconPressed,
     this.textInputType, // Initialize the new parameter
+    this.isDisabled = false, // Set the default value for isDisabled
   });
 
   @override
@@ -52,6 +54,7 @@ class CustomTextField extends StatelessWidget {
         ),
         textAlign: TextAlign.right,
         keyboardType: textInputType, // Set the input type
+        enabled: !isDisabled, // Disable the text field if isDisabled is true
       ),
     );
   }
