@@ -18,24 +18,26 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100.0),
-        child: Container(
-          margin: const EdgeInsets.only(top: 40.0),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.asset(
-                  'assets/Logo/Logo-2.png',
-                ),
-                Text(
-                  'أهلاً, هادي',
-                  style: GoogleFonts.readexPro(
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Container(
+            margin: const EdgeInsets.only(top: 40.0),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset(
+                    'assets/Logo/Logo-2.png',
                   ),
-                ),
-              ],
+                  Text(
+                    'أهلاً, هادي',
+                    style: GoogleFonts.readexPro(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
